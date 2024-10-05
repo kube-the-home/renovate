@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":enableRenovate",
+    ":enableVulnerabilityAlerts",
+    ":dependencyDashboard",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ],
+  "semanticCommits": "enabled",
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "git-submodules": {
+    "enabled": true
+  },
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^.*$"
+      ],
+      "matchStrings": [
+        "[\"']{0,1}(?<currentValue>[^\\s\"']*)[\"']{0,1}\\s+#\\s+(renovate\\s+)(?<dataSource>[^\\s\"']+)\\s+(?<depName>[^\\s\"']+)"
+      ]
+    },
+    {
+      "fileMatch": [
+        "^.*$"
+      ],
+      "datasourceTemplate": "docker",
+      "matchStrings": [
+        "[\"']{0,1}(?<depName>[^\\s\"']+):(?<currentValue>[^\\s\"']*)[\"']{0,1}\\s+#\\s+(renovate)"
+      ]
+    }
+  ]
+}
