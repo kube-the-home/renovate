@@ -36,6 +36,21 @@ const renovateConfig = {
             matchStrings: [genericDockerImageMatch]
         }
     ],
+    packageRules: [
+        {
+            matchUpdateTypes: ["patch"],
+            semanticCommitType: "fix"
+        },
+        {
+            matchUpdateTypes: ["minor"],
+            semanticCommitType: "feat"
+        },
+        {
+            matchUpdateTypes: ["major"],
+            semanticCommitType: "feat",
+            semanticCommitBreaking: true
+        },
+    ],
 }
 
 const filename = `default.json`;
