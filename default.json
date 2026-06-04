@@ -7,7 +7,8 @@
     ":dependencyDashboard",
     "group:monorepos",
     "group:recommended",
-    "workarounds:all"
+    "workarounds:all",
+    "github>kube-the-home/renovate//presets/components/github-actions.json"
   ],
   "semanticCommits": "enabled",
   "separateMajorMinor": true,
