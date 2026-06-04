@@ -8,7 +8,8 @@
     "group:monorepos",
     "group:recommended",
     "workarounds:all",
-    "github>kube-the-home/renovate//presets/components/github-actions.json"
+    "github>kube-the-home/renovate//presets/components/github-actions.json",
+    "github>kube-the-home/renovate//presets/components/golang.json"
   ],
   "semanticCommits": "enabled",
   "separateMajorMinor": true,
