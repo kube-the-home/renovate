@@ -16,6 +16,20 @@
         "digest"
       ],
       "enabled": false
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "kube-the-home/github-actions"
+      ],
+      "platformAutomerge": true,
+      "automerge": true
     }
   ]
 }
