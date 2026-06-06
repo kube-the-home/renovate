@@ -5,7 +5,8 @@
       "matchManagers": [
         "github-actions"
       ],
-      "pinDigests": true
+      "pinDigests": true,
+      "semanticCommitType": "build"
     },
     {
       "matchManagers": [
